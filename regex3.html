@@ -1,0 +1,22 @@
+<html>
+
+<script>
+
+var arquivo = '100,200-150,200;20';
+
+var exp = /[,;-]/;
+
+var valores = arquivo.split(exp);//passar um separador que ele se encarregará de criar um array com cada item considerando o separador utilizado. 
+
+var codigos = 'A121B12112C12212F12G01';
+
+var exp = /[A-Za-z]\d+/g
+
+var codigosExtraidos = codigos.match(exp); //aceita uma expressão regular e retorna em um array todas as partes do alvo que atendem a expressão regular
+
+
+
+</script>
+
+
+</html>

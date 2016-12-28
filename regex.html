@@ -1,0 +1,23 @@
+<html>
+
+<script type="text/javascript">
+	
+var target = "11a22b33c"; //conteúdo no qual aplicaremos a expressão regular
+
+var exp = new RegExp('(\\d\\d)(\\w)', 'g'); //criando instancia de RegExp, pasando a regex. g queremos todas as ocorrências encontradas da nossa expressão
+
+//exp = /(\d\d)(\w)/g;  //forma literal
+
+//exp.test(target); //retornará true apenas se o alvo seguir o padrão da expressão.
+
+console.log(exp.exec(target));  //obter como resultado um array com as partes do alvo: ["11a", "11", "a"] Match, grupo 1, grupo 2
+
+console.log(exp.exec(target)); //["22b", "22", "b"]
+console.log(exp.exec(target)); //["33c", "33", "c"]
+console.log(exp.exec(target)); //  null
+
+
+</script>
+
+
+</html>
